@@ -8,7 +8,8 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 ## スクリーンショット
 
 <!-- スクリーンショットを docs/images/screenshot.png に置き、下の行のコメントを外してください -->
-<!-- ![macOS Tahoe on ASUS ExpertBook BR1104FTA](docs/images/screenshot.png) -->
+<img width="1366" height="768" alt="スクリーンショット 2026-11-14 22 29 24" src="https://github.com/user-attachments/assets/694b1396-2280-43fb-8fb2-7ca1038aa51a" />
+
 
 ## ハードウェア
 
@@ -58,8 +59,8 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 | スリープ／復帰 | × | 復帰できない。`sudo pmset -a disablesleep 1` でスリープ自体を無効化して運用 |
 | 内蔵 UFS ストレージ | × | macOS にドライバがない |
 | SD カードリーダー | － | |
-| USB-C（映像出力・充電） | － | |
-| iCloud / iMessage などの Apple サービス | － | |
+| USB-C（映像出力・充電） | ✅ | |
+| iCloud / iMessage などの Apple サービス | － | 未確認 |
 
 ## この機種固有の修正
 
