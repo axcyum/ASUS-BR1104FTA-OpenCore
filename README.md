@@ -5,6 +5,11 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 
 > 実験的な構成です。特にグラフィックスは未マージの修正を含む WhateverXe の独自ビルドに依存しています。自己責任で使用してください。
 
+## スクリーンショット
+
+<!-- スクリーンショットを docs/images/screenshot.png に置き、下の行のコメントを外してください -->
+<!-- ![macOS Tahoe on ASUS ExpertBook BR1104FTA](docs/images/screenshot.png) -->
+
 ## ハードウェア
 
 | 項目 | 内容 |
@@ -87,6 +92,8 @@ Replace: 5F435253 00 A00E 95 4F535953 0B 0000 A4 53424649 A01E 93 54504C4D
 WhateverXe 0.8.2 RELEASE では、内蔵 eDP の起動ポートがネイティブモード 0 のまま拒否され、加速が有効になりません（`N97FramebufferStartAccepted = No`）。
 同梱の `WhateverXe.kext` は、0.8.2 に上流の修正コミット `9c219ee`（"Admit the eDP boot port with native mode 0 at the firmware handoff"）を適用して GitHub Actions でビルドしたものです。
 
+ソースとビルド済みバイナリは [axcyum/WhateverXe-eDP-BootFix](https://github.com/axcyum/WhateverXe-eDP-BootFix)（リリース [`0.8.2-KAI`](https://github.com/axcyum/WhateverXe-eDP-BootFix/releases/tag/0.8.2-KAI)）で公開しています。
+
 詳細な調査内容は [docs/WhateverXe-issue-edp-boot-port.md](docs/WhateverXe-issue-edp-boot-port.md) にあります。
 
 ### 4. 内蔵ディスクに EFI パーティションがない場合
@@ -126,7 +133,7 @@ sudo diskutil apfs resizeContainer disk0s2 999g FAT32 OCEFI 0b
 | kext | バージョン | 状態 |
 | --- | --- | :---: |
 | Lilu | 1.7.3 | 有効 |
-| WhateverXe | 0.8.2 + `9c219ee`（独自ビルド） | 有効 |
+| WhateverXe | [0.8.2-KAI](https://github.com/axcyum/WhateverXe-eDP-BootFix)（0.8.2 + `9c219ee`） | 有効 |
 | AMFIPass | 1.4.1 Mod | 有効 |
 | VirtualSMC / SMCProcessor / SMCSuperIO / SMCBatteryManager | 1.3.9 | 有効 |
 | ECEnabler | 1.0.6 | 有効 |
@@ -171,7 +178,7 @@ macOS 上で `sudo sh <スクリプト>` として実行すると、スクリプ
 ## クレジット
 
 - [acidanthera](https://github.com/acidanthera)（OpenCore、Lilu、VirtualSMC、VoodooPS2 ほか）
-- [b00t0x/WhateverXe](https://github.com/b00t0x/WhateverXe)
+- [b00t0x/WhateverXe](https://github.com/b00t0x/WhateverXe)、eDP 修正ビルド [axcyum/WhateverXe-eDP-BootFix](https://github.com/axcyum/WhateverXe-eDP-BootFix)
 - [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [OpenIntelWireless](https://github.com/OpenIntelWireless)（itlwm、HeliPort、IntelBluetoothFirmware）
 - [USBToolBox](https://github.com/USBToolBox)、[ChefKiss](https://github.com/ChefKissInc)（ForgedInvariant）、[1Revenger1](https://github.com/1Revenger1/ECEnabler)、[dhinakg](https://github.com/dhinakg/AMFIPass)、[Mieze](https://github.com/Mieze/RTL8111_driver_for_OS_X)、[laobamac](https://github.com/laobamac/SimpleHDA)
