@@ -39,7 +39,7 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 | グラフィックス加速（Metal） | ✅ | WhateverXe 0.8.2 + eDP 起動ポート修正（独自ビルド）、WhateverXe Graphics pkg が必要。VRAM 1536 MB |
 | 内蔵ディスプレイ | ✅ | 1366x768 |
 | 外部ディスプレイ（HDMI） | ✅ | |
-| 輝度調整 | △ | 一部のみ動作（`SSDT-PNLF` + BrightnessKeys） |
+| 輝度調整 | △ | システム設定／コントロールセンターのスライダーは動作。キーボードの輝度キーは反応しない（`SSDT-PNLF` + BrightnessKeys） |
 | キーボード | ✅ | VoodooPS2Controller |
 | トラックパッド | ✅ | VoodooI2C + VoodooI2CHID、ポーリング動作（`-vi2c-force-polling`） |
 | タッチスクリーン／スタイラス | △ | 専用の ACPI パッチを入れれば動作するが、同時にトラックパッドが無反応になるため本構成では無効 |
@@ -49,7 +49,7 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 | バッテリー表示 | ✅ | SMCBatteryManager + ECEnabler |
 | USB ポート | ✅ | USBToolBox + UTBDefault（個別のポートマップは未作成） |
 | 内蔵オーディオ（スピーカー／マイク／イヤホン） | × | コーデックが Intel SST（`INTELAUDIO`）接続で AppleHDA 非対応。USB オーディオか Bluetooth で代替 |
-| 内蔵 Web カメラ | × | |
+| 内蔵 Web カメラ | ✅ | USB UVC。映らないときは本体の物理プライバシーシャッター（スライダー）を確認 |
 | スリープ／復帰 | × | 復帰できない。`sudo pmset -a disablesleep 1` でスリープ自体を無効化して運用 |
 | 内蔵 UFS ストレージ | × | macOS にドライバがない |
 | SD カードリーダー | － | |
