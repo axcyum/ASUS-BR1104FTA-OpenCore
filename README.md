@@ -60,7 +60,7 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 | 内蔵 UFS ストレージ | × | macOS にドライバがない |
 | SD カードリーダー | － | |
 | USB-C（映像出力・充電） | ✅ | |
-| iCloud / iMessage などの Apple サービス | － | 未確認 |
+| iCloud / iMessage などの Apple サービス | － | |
 
 ## この機種固有の修正
 
