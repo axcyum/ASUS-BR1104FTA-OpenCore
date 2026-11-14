@@ -1,7 +1,7 @@
 # ASUS ExpertBook BR1104FTA — OpenCore EFI (macOS Tahoe)
 
 ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動かすための OpenCore EFI 一式です。
-内蔵ディスクの EFI パーティションに置いて常用している構成と同じ内容です。
+内蔵ディスクの EFI パーティションに置いて常用している構成と同じ内容です。Windows11で重いので動作速度は察してください。
 
 > 実験的な構成です。特にグラフィックスは未マージの修正を含む WhateverXe の独自ビルドに依存しています。自己責任で使用してください。
 
