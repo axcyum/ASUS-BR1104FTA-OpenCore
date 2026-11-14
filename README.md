@@ -34,7 +34,7 @@ ASUS ExpertBook BR1104FTA（Intel N150 / Twin Lake）で macOS Tahoe 26 を動�
 | macOS | Tahoe 26.7.3（25G342） |
 | ブートローダ | OpenCore（RELEASE ビルド） |
 | SMBIOS | MacBookPro16,2 |
-| 起動ディスク | 外付け USB ディスク（内蔵 UFS は macOS から使用不可のため） |
+| 起動ディスク | 分解し1TB M.2 NVMeディスクを追加 |
 
 ## 動作状況
 
