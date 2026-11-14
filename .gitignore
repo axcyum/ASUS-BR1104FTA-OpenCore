@@ -1,0 +1,5 @@
+._*
+.DS_Store
+*.bak*
+diag*-*.txt
+opencore-*.txt
